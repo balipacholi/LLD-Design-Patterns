@@ -5,5 +5,5 @@
 
 class InfoLogger : public ILogger {
     public:
-      void log(const string& message);
+      void log(const string& message) override;
 };

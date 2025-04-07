@@ -9,16 +9,19 @@ int main(){
     ILoggerFactory* factory1 = new DebugFactory();
     ILogger* debugLogger = factory1->createLogger();
     debugLogger->log("This is a debug message ");
+    delete factory1;
     delete debugLogger;
 
     ILoggerFactory* factory2 = new ErrorFactory();
     ILogger* errorLogger = factory2->createLogger();
     errorLogger->log("This is a error message ");
+    delete factory2;
     delete errorLogger;
 
     ILoggerFactory* factory3 = new InfoFactory();
     ILogger* InfoLogger = factory3->createLogger();
     InfoLogger->log("This is a info message ");
+    delete factory3;
     delete InfoLogger;
     return 0;
 }

@@ -4,7 +4,7 @@
 
 class ErrorFactory : public ILoggerFactory {
  public:
-  ILogger* createLogger(){
+  ILogger* createLogger() override{
         return new ErrorLogger();
   }
 };
