@@ -5,7 +5,8 @@
 #include <iostream>
 using namespace std;
 
-enum class LogLevel {
+enum class LogLevel
+{
     DEBUG,
     INFO,
     ERROR

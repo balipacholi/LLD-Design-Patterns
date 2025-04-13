@@ -5,9 +5,10 @@
 #include "ilogger.hpp"
 #include "common.hpp"
 
-class LoggerFactory{
-  public: 
-    static ILogger* createLogger(LogLevel level);
+class LoggerFactory
+{
+public:
+  static ILogger *createLogger(LogLevel level);
 };
 
-#endif //LOGGER_FACTORY_HPP
+#endif // LOGGER_FACTORY_HPP

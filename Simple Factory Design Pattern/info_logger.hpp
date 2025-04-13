@@ -3,8 +3,9 @@
 #include "ilogger.hpp"
 #include <string>
 
-class InfoLogger : public ILogger{
-    public:
-       void log(const std::string& message);
+class InfoLogger : public ILogger
+{
+public:
+    void log(const std::string &message);
 };
 #endif

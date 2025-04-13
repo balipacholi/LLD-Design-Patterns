@@ -3,13 +3,18 @@
 #include "info_logger.hpp"
 #include "error_logger.hpp"
 
-ILogger* LoggerFactory::createLogger(LogLevel level){
-    if(level == LogLevel::DEBUG){
+ILogger *LoggerFactory::createLogger(LogLevel level)
+{
+    if (level == LogLevel::DEBUG)
+    {
         return new DebugLogger();
     }
-    else if(level == LogLevel::INFO){
+    else if (level == LogLevel::INFO)
+    {
         return new InfoLogger();
-    } else {
+    }
+    else
+    {
         return new ErrorLogger();
     }
     return nullptr;
